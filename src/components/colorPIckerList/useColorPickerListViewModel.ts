@@ -31,11 +31,17 @@ export const useColorPickerListViewModel = (props: IColorPickerListProps) => {
   };
 
   const onDeleteColor = (color: IColor) => {
+    let deletedLast = false;
     setColors((previous) => {
       const index = findColorIndex(previous, color);
       previous.splice(index, 1);
+      deletedLast = previous.length === 0;
       return [...previous];
     });
+
+    if (deletedLast) {
+      props.onDeleteLast?.();
+    }
   };
 
   const onDuplicateColor = (color: IColor) => {

@@ -1,1 +1,3 @@
-export interface IColorPickerListProps {}
+export interface IColorPickerListProps {
+  onDeleteLast?: () => void;
+}
