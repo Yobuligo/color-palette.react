@@ -1,5 +1,6 @@
 import { ReactComponent as CopyIcon } from "../../assets/copy.svg";
 import { ReactComponent as DeleteIcon } from "../../assets/delete.svg";
+import { Card } from "../card/Card";
 import styles from "./ColorPicker.module.css";
 import { IColorPickerProps } from "./IColorPickerProps";
 import { useColorPickerViewModel } from "./useColorPickerViewModel";
@@ -8,7 +9,7 @@ export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
   const viewModel = useColorPickerViewModel(props);
 
   return (
-    <div className={styles.colorPicker}>
+    <Card className={styles.colorPicker}>
       <input
         className={styles.input}
         id={viewModel.inputId}
@@ -33,6 +34,6 @@ export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
           />
         </>
       )}
-    </div>
+    </Card>
   );
 };

@@ -1,0 +1,36 @@
+"filename", "language", "JSON with Comments", "JSON", "TypeScript JSX", "CSS", "TypeScript", "Markdown", "HTML", "XML", "comment", "blank", "total"
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\README.md", "Markdown", 0, 0, 0, 0, 0, 26, 0, 0, 0, 21, 47
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\package-lock.json", "JSON", 0, 18002, 0, 0, 0, 0, 0, 0, 0, 1, 18003
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\package.json", "JSON", 0, 43, 0, 0, 0, 0, 0, 0, 0, 1, 44
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\public\index.html", "HTML", 0, 0, 0, 0, 0, 0, 18, 0, 23, 1, 42
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\public\manifest.json", "JSON", 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 9
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\App.tsx", "TypeScript JSX", 0, 0, 6, 0, 0, 0, 0, 0, 0, 3, 9
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\add.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 8
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\copy.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\delete.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\display.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 4
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\hide.svg", "XML", 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 5
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPIckerList\ColorPickerList.module.css", "CSS", 0, 0, 0, 7, 0, 0, 0, 0, 0, 2, 9
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPIckerList\ColorPickerList.tsx", "TypeScript JSX", 0, 0, 29, 0, 0, 0, 0, 0, 0, 4, 33
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPIckerList\IColorPickerListProps.ts", "TypeScript", 0, 0, 0, 0, 4, 0, 0, 0, 0, 2, 6
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPIckerList\useColorPickerListViewModel.ts", "TypeScript", 0, 0, 0, 0, 63, 0, 0, 0, 1, 11, 75
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPalette\ColorPalette.module.css", "CSS", 0, 0, 0, 15, 0, 0, 0, 0, 0, 3, 18
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPalette\ColorPalette.tsx", "TypeScript JSX", 0, 0, 35, 0, 0, 0, 0, 0, 0, 4, 39
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPalette\useColorPaletteViewModel.ts", "TypeScript", 0, 0, 0, 0, 43, 0, 0, 0, 0, 9, 52
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPicker\ColorPicker.module.css", "CSS", 0, 0, 0, 16, 0, 0, 0, 0, 0, 4, 20
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPicker\ColorPicker.tsx", "TypeScript JSX", 0, 0, 36, 0, 0, 0, 0, 0, 0, 3, 39
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPicker\IColorPickerProps.ts", "TypeScript", 0, 0, 0, 0, 8, 0, 0, 0, 0, 2, 10
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\colorPicker\useColorPickerViewModel.ts", "TypeScript", 0, 0, 0, 0, 19, 0, 0, 0, 0, 5, 24
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\controlUnitIcon\ControlUnitIcon.tsx", "TypeScript JSX", 0, 0, 22, 0, 0, 0, 0, 0, 0, 2, 24
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\controlUnitIcon\IControlUnitIconProps.ts", "TypeScript", 0, 0, 0, 0, 4, 0, 0, 0, 0, 2, 6
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\hooks\useToggle.ts", "TypeScript", 0, 0, 0, 0, 14, 0, 0, 0, 0, 4, 18
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\index.css", "CSS", 0, 0, 0, 12, 0, 0, 0, 0, 0, 2, 14
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\index.tsx", "TypeScript JSX", 0, 0, 7, 0, 0, 0, 0, 0, 0, 2, 9
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\model\IColor.ts", "TypeScript", 0, 0, 0, 0, 4, 0, 0, 0, 0, 1, 5
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\pages\ColorPalette.tsx", "TypeScript JSX", 0, 0, 4, 0, 0, 0, 0, 0, 0, 2, 6
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\react-app-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\setupTests.ts", "TypeScript", 0, 0, 0, 0, 1, 0, 0, 0, 4, 1, 6
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\types\IHaveDisplayControlUnits.ts", "TypeScript", 0, 0, 0, 0, 3, 0, 0, 0, 3, 1, 7
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\utils\IdGenerator.ts", "TypeScript", 0, 0, 0, 0, 8, 0, 0, 0, 0, 3, 11
+"c:\Users\Peter\Documents\ReactProjects\color-palette.react\tsconfig.json", "JSON with Comments", 26, 0, 0, 0, 0, 0, 0, 0, 0, 1, 27
+"Total", "-", 26, 18054, 139, 50, 171, 26, 18, 27, 32, 98, 18641
