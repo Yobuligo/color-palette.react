@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { useToggle } from "../../hooks/useToggle";
 import { IdGenerator } from "../../utils/IdGenerator";
 
 export const useColorPaletteViewModel = () => {
-  const [displayControlUnits, setDisplayControlUnits] = useState(true);
+  const [displayControlUnits, toggleDisplayControlUnits] = useToggle(true);
   const [numberColorPickerLists, setNumberColorPickerLists] = useState<
     number[]
   >([IdGenerator.next()]);
@@ -38,10 +39,13 @@ export const useColorPaletteViewModel = () => {
     });
   };
 
+  const onToggleDisplayControlUnits = () => toggleDisplayControlUnits();
+
   return {
     displayControlUnits,
     numberColorPickerLists,
     onAddColorPickerList,
     onDeleteLastColorPicker,
+    onToggleDisplayControlUnits,
   };
 };

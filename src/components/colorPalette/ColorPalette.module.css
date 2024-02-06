@@ -10,6 +10,8 @@
   column-gap: 3rem;
 }
 
-.addButton{
-    margin-bottom: 2rem;
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
 }
