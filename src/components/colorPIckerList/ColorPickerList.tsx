@@ -9,11 +9,48 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
     { id: IdGenerator.next(), value: "#000" },
   ]);
 
-  const onDuplicateColor = (color: IColor) => {};
+  const findColorIndex = (colors: IColor[], color: IColor): number => {
+    const index = colors.findIndex((item) => item.id === color.id);
+    if (index === -1) {
+      throw new Error(`Error while finding color. Color not found.`);
+    }
+    return index;
+  };
 
-  const onDeleteColor = (color: IColor) => {};
+  const copyColor = (origin: IColor): IColor => {
+    return {
+      id: IdGenerator.next(),
+      value: origin.value,
+    };
+  };
 
-  const onUpdateColor = (color: IColor) => {};
+  const onDuplicateColor = (color: IColor) => {
+    setColors((previous) => {
+      const index = findColorIndex(previous, color);
+      const clone = copyColor(color);
+
+      // add new colors
+      previous.splice(index, 1, ...[color, clone]);
+      return [...previous];
+    });
+  };
+
+  const onDeleteColor = (color: IColor) => {
+    setColors((previous) => {
+      const index = findColorIndex(previous, color);
+      previous.splice(index, 1);
+      return [...previous];
+    });
+  };
+
+  const onUpdateColor = (color: IColor, newValue: string) => {
+    setColors((previous) => {
+      const index = findColorIndex(previous, color);
+      color.value = newValue;
+      previous.splice(index, 1, color);
+      return [...previous];
+    });
+  };
 
   const items = colors.map((color, index) => (
     <div key={index}>
@@ -21,7 +58,7 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
         color={color}
         onDuplicateColor={() => onDuplicateColor(color)}
         onDeleteColor={() => onDeleteColor(color)}
-        onUpdateColor={() => onUpdateColor(color)}
+        onUpdateColor={(newValue: string) => onUpdateColor(color, newValue)}
       />
     </div>
   ));
