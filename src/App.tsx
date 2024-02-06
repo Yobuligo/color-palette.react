@@ -1,13 +1,8 @@
 import React from "react";
-import "./App.css";
-import { ColorPickerSection } from "./components/colorPicketSection/ColorPickerSection";
+import { ColorPalettePage } from "./pages/ColorPalette";
 
 const App: React.FC = () => {
-  return (
-    <>
-      <ColorPickerSection />
-    </>
-  );
+  return <ColorPalettePage />;
 };
 
 export default App;

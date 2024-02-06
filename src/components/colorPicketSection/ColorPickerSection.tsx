@@ -6,6 +6,7 @@ export const ColorPickerSection: React.FC<IColorPickerSectionProps> = (
   props
 ) => {
   return (
+    
     <div className={styles.colorPickerSection}>
       <ColorPickerList />
       <ColorPickerList />
