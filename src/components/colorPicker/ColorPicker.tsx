@@ -18,21 +18,23 @@ export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
         onChange={viewModel.onSetColor}
       />
       {props.displayControlUnits && (
-        <>
+        <div className={styles.footer}>
           <label className={styles.label} htmlFor={viewModel.inputId}>
             {viewModel.color}
           </label>
           <CopyIcon
-            width={"2rem"}
+            width={"1.5rem"}
             onClick={props.onDuplicateColor}
             className={styles.button}
+            title="Copy color"
           />
           <DeleteIcon
-            width={"2rem"}
+            width={"1.5rem"}
             onClick={props.onDeleteColor}
             className={styles.button}
+            title="Delete color"
           />
-        </>
+        </div>
       )}
     </Card>
   );

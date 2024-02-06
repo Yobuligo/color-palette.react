@@ -1,6 +1,6 @@
 .colorPicker {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -11,7 +11,15 @@
 
 .input {
   width: 10rem;
-  height: 3rem;
+  height: 4rem;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2rem;
 }
 
 .button {
