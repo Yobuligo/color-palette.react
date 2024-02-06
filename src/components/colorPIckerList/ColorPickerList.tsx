@@ -37,18 +37,20 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
 
   const onDeleteColor = (color: IColor) => {
     setColors((previous) => {
-      const index = findColorIndex(previous, color);
-      previous.splice(index, 1);
-      return [...previous];
+      const colors = [...previous];
+      const index = findColorIndex(colors, color);
+      colors.splice(index, 1);
+      return colors;
     });
   };
 
   const onUpdateColor = (color: IColor, newValue: string) => {
     setColors((previous) => {
-      const index = findColorIndex(previous, color);
+      const colors = [...previous];
+      const index = findColorIndex(colors, color);
       color.value = newValue;
-      previous.splice(index, 1, color);
-      return [...previous];
+      colors.splice(index, 1, color);
+      return colors;
     });
   };
 
@@ -63,5 +65,10 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
     </div>
   ));
 
-  return <>{items}</>;
+  return (
+    <>
+      {/* <AddIcon width={"2rem"} /> */}
+      {items}
+    </>
+  );
 };
