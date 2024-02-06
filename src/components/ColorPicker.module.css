@@ -1,0 +1,14 @@
+.colorPicker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  margin-left: 0.5rem;
+}
+
+.input {
+  width: 10rem;
+  height: 3rem;
+}

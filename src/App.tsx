@@ -1,8 +1,13 @@
 import React from "react";
 import "./App.css";
+import { ColorPicker } from "./components/ColorPicker";
 
 const App: React.FC = () => {
-  return <>Hello World</>;
+  return (
+    <>
+      <ColorPicker />
+    </>
+  );
 };
 
 export default App;
