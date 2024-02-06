@@ -1,0 +1,15 @@
+.colorPalette {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.colorPickerLists {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+}
+
+.addButton{
+    margin-bottom: 2rem;
+}

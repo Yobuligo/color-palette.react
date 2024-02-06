@@ -1,9 +1,5 @@
-import { ColorPickerSection } from "../components/colorPicketSection/ColorPickerSection";
+import { ColorPalette } from "../components/colorPalette/ColorPalette";
 
 export const ColorPalettePage: React.FC = () => {
-  return (
-    <>
-      <ColorPickerSection />
-    </>
-  );
+  return <ColorPalette />;
 };
