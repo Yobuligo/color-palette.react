@@ -11,7 +11,7 @@
 
 .input {
   width: 10rem;
-  height: 4rem;
+  height: 10rem;
   border: none;
 }
 
@@ -24,4 +24,8 @@
 
 .button {
   cursor: pointer;
+}
+
+.noPadding {
+  padding: 0;
 }

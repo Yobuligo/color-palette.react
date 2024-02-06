@@ -1,9 +1,9 @@
-import { styles } from "../../utils/styles";
-import style from "./Card.module.css";
+import { style } from "../../utils/style";
+import styles from "./Card.module.css";
 import { ICardProps } from "./ICardProps";
 
 export const Card: React.FC<ICardProps> = (props) => {
   return (
-    <div className={styles(style.card, props.className)}>{props.children}</div>
+    <div className={style(styles.card, props.className)}>{props.children}</div>
   );
 };

@@ -15,3 +15,7 @@
   flex-direction: row;
   margin-bottom: 2rem;
 }
+
+.noRowGap {
+  row-gap: 0;
+}

@@ -7,3 +7,7 @@
 .addButton {
   cursor: pointer;
 }
+
+.noGap {
+  gap: 0;
+}

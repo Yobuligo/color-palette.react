@@ -1,4 +1,5 @@
 import { ReactComponent as AddIcon } from "../../assets/add.svg";
+import { style } from "../../utils/style";
 import { ColorPickerList } from "../colorPIckerList/ColorPickerList";
 import { ControlUnitIcon } from "../controlUnitIcon/ControlUnitIcon";
 import styles from "./ColorPalette.module.css";
@@ -32,7 +33,14 @@ export const ColorPalette: React.FC = () => {
           onToggle={viewModel.onToggleDisplayControlUnits}
         />
       </div>
-      <div className={styles.colorPickerLists}>{items}</div>
+      <div
+        className={style(
+          styles.colorPickerLists,
+          viewModel.displayControlUnits ? "" : styles.noRowGap
+        )}
+      >
+        {items}
+      </div>
     </div>
   );
 };
