@@ -40,7 +40,7 @@ export const useColorPickerListViewModel = (props: IColorPickerListProps) => {
     });
 
     if (deletedLast) {
-      props.onDeleteLast?.();
+      props.onDeleteLastColorPicker?.();
     }
   };
 

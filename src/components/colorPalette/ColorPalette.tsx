@@ -8,7 +8,11 @@ export const ColorPalette: React.FC = () => {
 
   const items = viewModel.numberColorPickerLists.map((numberColorList) => (
     <div key={numberColorList}>
-      <ColorPickerList />
+      <ColorPickerList
+        onDeleteLastColorPicker={() =>
+          viewModel.onDeleteLastColorPicker(numberColorList)
+        }
+      />
     </div>
   ));
 
