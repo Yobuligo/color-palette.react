@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import { ReactComponent as CopyIcon } from "../../assets/copy.svg";
 import { ReactComponent as DeleteIcon } from "../../assets/delete.svg";
 import { style } from "../../utils/style";
@@ -9,6 +10,10 @@ import { useColorPickerViewModel } from "./useColorPickerViewModel";
 export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
   const viewModel = useColorPickerViewModel(props);
 
+  const styling = {
+    "--color": `${viewModel.color}`,
+  } as CSSProperties;
+
   return (
     <Card
       className={style(
@@ -16,13 +21,17 @@ export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
         props.displayControlUnits ? "" : styles.noPadding
       )}
     >
-      <input
-        className={styles.input}
-        id={viewModel.inputId}
-        type="color"
-        value={viewModel.color}
-        onChange={viewModel.onSetColor}
-      />
+      {props.displayControlUnits ? (
+        <input
+          className={styles.tile}
+          id={viewModel.inputId}
+          type="color"
+          value={viewModel.color}
+          onChange={viewModel.onSetColor}
+        />
+      ) : (
+        <div className={style(styles.tile, styles.tileColor)} style={styling} />
+      )}
       {props.displayControlUnits && (
         <div className={styles.footer}>
           <label className={styles.label} htmlFor={viewModel.inputId}>
