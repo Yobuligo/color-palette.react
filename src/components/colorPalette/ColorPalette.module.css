@@ -1,9 +1,3 @@
-.colorPalette {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
 .colorPickerLists {
   display: flex;
   flex-direction: column;

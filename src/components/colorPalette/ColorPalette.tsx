@@ -2,6 +2,7 @@ import { ReactComponent as AddIcon } from "../../assets/add.svg";
 import { style } from "../../utils/style";
 import { ColorPickerList } from "../colorPIckerList/ColorPickerList";
 import { ControlUnitIcon } from "../controlUnitIcon/ControlUnitIcon";
+import { Section } from "../section/Section";
 import styles from "./ColorPalette.module.css";
 import { useColorPaletteViewModel } from "./useColorPaletteViewModel";
 
@@ -20,8 +21,7 @@ export const ColorPalette: React.FC = () => {
   ));
 
   return (
-    <div className={styles.colorPalette}>
-      <h3>Pick and combine your colors</h3>
+    <Section title="Pick and combine your colors">
       <div className={styles.toolbar}>
         <AddIcon
           title="Add new color list"
@@ -41,6 +41,6 @@ export const ColorPalette: React.FC = () => {
       >
         {items}
       </div>
-    </div>
+    </Section>
   );
 };
