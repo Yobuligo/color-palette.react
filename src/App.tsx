@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { ColorPicker } from "./components/ColorPicker";
+import { ColorPickerList } from "./components/colorPIckerList/ColorPickerList";
 
 const App: React.FC = () => {
   return (
     <>
-      <ColorPicker />
+      <ColorPickerList />
     </>
   );
 };

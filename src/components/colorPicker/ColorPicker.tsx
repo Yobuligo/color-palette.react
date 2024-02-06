@@ -4,10 +4,12 @@ import { IColorPickerProps } from "./IColorPickerProps";
 
 export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
   const inputId = useId();
-  const [color, setColor] = useState(props.initialColor ?? "#000");
+  const [color, setColor] = useState(props.initialColor);
 
   const onSetColor = (event: React.ChangeEvent<HTMLInputElement>) =>
     setColor(event.target.value);
+
+  const onDuplicateColor = () => props.onDuplicateColor?.(color);
 
   return (
     <div className={styles.colorPicker}>
@@ -21,6 +23,7 @@ export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
       <label className={styles.label} htmlFor={inputId}>
         {color}
       </label>
+      <button onClick={onDuplicateColor}>Duplicate</button>
     </div>
   );
 };
