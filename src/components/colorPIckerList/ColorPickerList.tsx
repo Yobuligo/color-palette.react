@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ReactComponent as AddIcon } from "../../assets/add.svg";
 import { IColor } from "../../model/IColor";
 import { IdGenerator } from "../../utils/IdGenerator";
 import { ColorPicker } from "../colorPicker/ColorPicker";
@@ -35,22 +36,27 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
     });
   };
 
+  const onAddColor = () => {
+    setColors((previous) => [
+      ...previous,
+      { id: IdGenerator.next(), value: "#000" },
+    ]);
+  };
+
   const onDeleteColor = (color: IColor) => {
     setColors((previous) => {
-      const colors = [...previous];
-      const index = findColorIndex(colors, color);
-      colors.splice(index, 1);
-      return colors;
+      const index = findColorIndex(previous, color);
+      previous.splice(index, 1);
+      return [...previous];
     });
   };
 
   const onUpdateColor = (color: IColor, newValue: string) => {
     setColors((previous) => {
-      const colors = [...previous];
-      const index = findColorIndex(colors, color);
+      const index = findColorIndex(previous, color);
       color.value = newValue;
-      colors.splice(index, 1, color);
-      return colors;
+      previous.splice(index, 1, color);
+      return [...previous];
     });
   };
 
@@ -67,7 +73,7 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
 
   return (
     <>
-      {/* <AddIcon width={"2rem"} /> */}
+      {colors.length === 0 && <AddIcon width={"5rem"} onClick={onAddColor} />}
       {items}
     </>
   );
