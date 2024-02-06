@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 import { ReactComponent as CopyIcon } from "../../assets/copy.svg";
 import { ReactComponent as DeleteIcon } from "../../assets/delete.svg";
 import { style } from "../../utils/style";
-import { Card } from "../card/Card";
+import { Card } from "../../components/card/Card";
 import styles from "./ColorPicker.module.css";
 import { IColorPickerProps } from "./IColorPickerProps";
 import { useColorPickerViewModel } from "./useColorPickerViewModel";

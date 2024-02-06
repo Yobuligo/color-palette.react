@@ -2,7 +2,7 @@ import { ReactComponent as AddIcon } from "../../assets/add.svg";
 import { style } from "../../utils/style";
 import { ColorPickerList } from "../colorPIckerList/ColorPickerList";
 import { ControlUnitIcon } from "../controlUnitIcon/ControlUnitIcon";
-import { Section } from "../section/Section";
+import { Section } from "../../components/section/Section";
 import styles from "./ColorPalette.module.css";
 import { useColorPaletteViewModel } from "./useColorPaletteViewModel";
 
