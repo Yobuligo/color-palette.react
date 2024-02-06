@@ -1,6 +1,6 @@
 import { ReactComponent as AddIcon } from "../../assets/add.svg";
 import { style } from "../../utils/style";
-import { ColorPickerList } from "../colorPIckerList/ColorPickerList";
+import { ColorPickerList } from "../colorPickerList/ColorPickerList";
 import { ControlUnitIcon } from "../controlUnitIcon/ControlUnitIcon";
 import { Section } from "../../components/section/Section";
 import styles from "./ColorPalette.module.css";

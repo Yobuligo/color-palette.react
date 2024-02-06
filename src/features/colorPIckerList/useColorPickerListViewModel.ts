@@ -4,6 +4,7 @@ import { IdGenerator } from "../../utils/IdGenerator";
 import { IColorPickerListProps } from "./IColorPickerListProps";
 
 export const useColorPickerListViewModel = (props: IColorPickerListProps) => {
+  const [colorTypeName, setColorTypeName] = useState("");
   const [colors, setColors] = useState<IColor[]>([
     { id: IdGenerator.next(), value: "#000" },
   ]);
@@ -23,12 +24,8 @@ export const useColorPickerListViewModel = (props: IColorPickerListProps) => {
     };
   };
 
-  const onAddColor = () => {
-    setColors((previous) => [
-      ...previous,
-      { id: IdGenerator.next(), value: "#000" },
-    ]);
-  };
+  const onChangeColorTypeName = (event: React.ChangeEvent<HTMLInputElement>) =>
+    setColorTypeName(event.target.value);
 
   const onDeleteColor = (color: IColor) => {
     let deletedLast = false;
@@ -66,7 +63,8 @@ export const useColorPickerListViewModel = (props: IColorPickerListProps) => {
 
   return {
     colors,
-    onAddColor,
+    colorTypeName,
+    onChangeColorTypeName,
     onDeleteColor,
     onDuplicateColor,
     onUpdateColor,

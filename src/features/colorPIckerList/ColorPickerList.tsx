@@ -1,4 +1,3 @@
-import { ReactComponent as AddIcon } from "../../assets/add.svg";
 import { style } from "../../utils/style";
 import { ColorPicker } from "../colorPicker/ColorPicker";
 import styles from "./ColorPickerList.module.css";
@@ -23,16 +22,15 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
   ));
 
   return (
-    <div
-      className={style(
-        styles.colorPickerList,
-        props.displayControlUnits ? "" : styles.noGap
-      )}
-    >
-      {viewModel.colors.length === 0 && (
-        <AddIcon width={"5rem"} onClick={viewModel.onAddColor} />
-      )}
-      {items}
+    <div>
+      <div
+        className={style(
+          styles.colorPickerList,
+          props.displayControlUnits ? "" : styles.noGap
+        )}
+      >
+        {items}
+      </div>
     </div>
   );
 };
