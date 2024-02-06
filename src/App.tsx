@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./App.module.css";
-import { ColorPalettePage } from "./pages/ColorPalette";
+import { ColorPalettePage } from "./pages/ColorPalettePage";
 
 const App: React.FC = () => {
   return (

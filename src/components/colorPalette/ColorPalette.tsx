@@ -21,7 +21,7 @@ export const ColorPalette: React.FC = () => {
 
   return (
     <div className={styles.colorPalette}>
-      <h2>Color Palette Generator</h2>
+      <h3>Pick and combine your colors</h3>
       <div className={styles.toolbar}>
         <AddIcon
           title="Add new color list"
