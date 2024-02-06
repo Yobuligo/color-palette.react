@@ -1,4 +1,8 @@
+import { IColor } from "../../model/IColor";
+
 export interface IColorPickerProps {
-  initialColor: string;
-  onDuplicateColor?: (color: string) => void;
+  color: IColor;
+  onDuplicateColor: () => void;
+  onDeleteColor: () => void;
+  onUpdateColor: (newValue: string) => void;
 }

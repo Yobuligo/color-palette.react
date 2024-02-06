@@ -1,15 +1,17 @@
 import { useId, useState } from "react";
+import { ReactComponent as CopyIcon } from "../../assets/copy.svg";
+import { ReactComponent as DeleteIcon } from "../../assets/delete.svg";
 import styles from "./ColorPicker.module.css";
 import { IColorPickerProps } from "./IColorPickerProps";
 
 export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
   const inputId = useId();
-  const [color, setColor] = useState(props.initialColor);
+  const [color, setColor] = useState(props.color.value);
 
-  const onSetColor = (event: React.ChangeEvent<HTMLInputElement>) =>
+  const onSetColor = (event: React.ChangeEvent<HTMLInputElement>) => {
     setColor(event.target.value);
-
-  const onDuplicateColor = () => props.onDuplicateColor?.(color);
+    props.onUpdateColor(event.target.value);
+  };
 
   return (
     <div className={styles.colorPicker}>
@@ -23,7 +25,16 @@ export const ColorPicker: React.FC<IColorPickerProps> = (props) => {
       <label className={styles.label} htmlFor={inputId}>
         {color}
       </label>
-      <button onClick={onDuplicateColor}>Duplicate</button>
+      <CopyIcon
+        width={"2rem"}
+        onClick={props.onDuplicateColor}
+        className={styles.button}
+      />
+      <DeleteIcon
+        width={"2rem"}
+        onClick={props.onDeleteColor}
+        className={styles.button}
+      />
     </div>
   );
 };
