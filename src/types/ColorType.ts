@@ -1,4 +1,4 @@
-export enum ColorTypes {
+export enum ColorType {
   PRIMARY = "Primary",
   SECONDARY = "Secondary",
   ACCENT = "Accent",

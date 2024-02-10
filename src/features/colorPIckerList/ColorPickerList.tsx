@@ -1,4 +1,6 @@
+import { Enum } from "../../base/Enum";
 import { Select } from "../../components/select/Select";
+import { ColorType } from "../../types/ColorType";
 import { style } from "../../utils/style";
 import { ColorPicker } from "../colorPicker/ColorPicker";
 import styles from "./ColorPickerList.module.css";
@@ -24,7 +26,14 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
 
   return (
     <div>
-      <Select items={[{firstname: "Stacey"}]} renderOptionTitle={(person)=>person.firstname} placeholder="... Select option"/>
+      {props.displayControlUnits && (
+        <Select
+          items={Enum.getValues(ColorType)}
+          renderOptionTitle={(colorType) => colorType}
+          placeholder="... Select option"
+        />
+      )}
+
       <div
         className={style(
           styles.colorPickerList,
@@ -32,7 +41,7 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
         )}
       >
         {items}
-      S</div>
+      </div>
     </div>
   );
 };
