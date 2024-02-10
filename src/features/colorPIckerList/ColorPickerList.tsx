@@ -24,7 +24,7 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
 
   return (
     <div>
-      <Select items={[{firstname: "Stacey"}]} renderTitle={(person)=>person.firstname} defaultOption="... Select option"/>
+      <Select items={[{firstname: "Stacey"}]} renderOptionTitle={(person)=>person.firstname} placeholder="... Select option"/>
       <div
         className={style(
           styles.colorPickerList,

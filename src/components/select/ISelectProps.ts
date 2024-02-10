@@ -1,7 +1,7 @@
 export interface ISelectProps<T> {
-  defaultOption?: string;
   items: T[];
   onSelect?: (item: T) => void;
+  placeholder?: string;
   selected?: T;
-  renderTitle: (item: T) => string;
+  renderOptionTitle: (item: T) => string;
 }
