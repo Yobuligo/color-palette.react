@@ -1,3 +1,4 @@
+import { Select } from "../../components/select/Select";
 import { style } from "../../utils/style";
 import { ColorPicker } from "../colorPicker/ColorPicker";
 import styles from "./ColorPickerList.module.css";
@@ -23,6 +24,7 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
 
   return (
     <div>
+      <Select items={[{firstname: "Stacey"}]} renderTitle={(person)=>person.firstname} defaultOption="... Select option"/>
       <div
         className={style(
           styles.colorPickerList,
@@ -30,7 +32,7 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
         )}
       >
         {items}
-      </div>
+      S</div>
     </div>
   );
 };

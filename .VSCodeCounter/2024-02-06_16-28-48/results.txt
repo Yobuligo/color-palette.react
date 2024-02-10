@@ -1,0 +1,97 @@
+Date : 2024-02-06 16:28:48
+Directory : c:\Users\Peter\Documents\ReactProjects\color-palette.react
+Total : 46 files,  18639 codes, 33 comments, 122 blanks, all 18794 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          3 |     18,054 |          0 |          2 |     18,056 |
+| TypeScript JSX     |         11 |        212 |          0 |         29 |        241 |
+| TypeScript         |         16 |        187 |          9 |         49 |        245 |
+| CSS                |          8 |         89 |          1 |         19 |        109 |
+| XML                |          5 |         27 |          0 |          0 |         27 |
+| JSON with Comments |          1 |         26 |          0 |          1 |         27 |
+| Markdown           |          1 |         26 |          0 |         21 |         47 |
+| HTML               |          1 |         18 |         23 |          1 |         42 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                   | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                      |         46 |     18,639 |         33 |        122 |     18,794 |
+| . (Files)                                                                                                              |          4 |     18,097 |          0 |         24 |     18,121 |
+| public                                                                                                                 |          2 |         27 |         23 |          1 |         51 |
+| src                                                                                                                    |         40 |        515 |         10 |         97 |        622 |
+| src (Files)                                                                                                            |          6 |         33 |          6 |         10 |         49 |
+| src\assets                                                                                                             |          5 |         27 |          0 |          0 |         27 |
+| src\components                                                                                                         |          9 |         65 |          0 |         15 |         80 |
+| src\components\card                                                                                                    |          3 |         18 |          0 |          5 |         23 |
+| src\components\page                                                                                                    |          3 |         27 |          0 |          5 |         32 |
+| src\components\section                                                                                                 |          3 |         20 |          0 |          5 |         25 |
+| src\features                                                                                                           |         14 |        347 |          1 |         60 |        408 |
+| src\features\codeDisplay                                                                                               |          1 |          4 |          0 |          2 |          6 |
+| src\features\colorPalette                                                                                              |          3 |         99 |          0 |         16 |        115 |
+| src\features\colorPicker                                                                                               |          4 |        109 |          0 |         18 |        127 |
+| src\features\colorPickerList                                                                                           |          4 |        109 |          1 |         20 |        130 |
+| src\features\controlUnitIcon                                                                                           |          2 |         26 |          0 |          4 |         30 |
+| src\hooks                                                                                                              |          1 |         14 |          0 |          4 |         18 |
+| src\model                                                                                                              |          1 |          4 |          0 |          1 |          5 |
+| src\pages                                                                                                              |          1 |         11 |          0 |          2 |         13 |
+| src\types                                                                                                              |          1 |          3 |          3 |          1 |          7 |
+| src\utils                                                                                                              |          2 |         11 |          0 |          4 |         15 |
++------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                               | language           | code       | comment    | blank      | total      |
++------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\README.md                                                   | Markdown           |         26 |          0 |         21 |         47 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\package-lock.json                                           | JSON               |     18,002 |          0 |          1 |     18,003 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\package.json                                                | JSON               |         43 |          0 |          1 |         44 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\public\index.html                                           | HTML               |         18 |         23 |          1 |         42 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\public\manifest.json                                        | JSON               |          9 |          0 |          0 |          9 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\App.module.css                                          | CSS                |          2 |          0 |          1 |          3 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\App.tsx                                                 | TypeScript JSX     |         11 |          0 |          3 |         14 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\add.svg                                          | XML                |          8 |          0 |          0 |          8 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\copy.svg                                         | XML                |          5 |          0 |          0 |          5 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\delete.svg                                       | XML                |          5 |          0 |          0 |          5 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\display.svg                                      | XML                |          4 |          0 |          0 |          4 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\assets\hide.svg                                         | XML                |          5 |          0 |          0 |          5 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\card\Card.module.css                         | CSS                |          5 |          0 |          1 |          6 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\card\Card.tsx                                | TypeScript JSX     |          8 |          0 |          2 |         10 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\card\ICardProps.ts                           | TypeScript         |          5 |          0 |          2 |          7 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\page\IPageProps.ts                           | TypeScript         |          5 |          0 |          2 |          7 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\page\Page.module.css                         | CSS                |         12 |          0 |          1 |         13 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\page\Page.tsx                                | TypeScript JSX     |         10 |          0 |          2 |         12 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\section\ISectionProps.ts                     | TypeScript         |          5 |          0 |          2 |          7 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\section\Section.module.css                   | CSS                |          5 |          0 |          1 |          6 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\components\section\Section.tsx                          | TypeScript JSX     |         10 |          0 |          2 |         12 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\codeDisplay\CodeDisplay.tsx                    | TypeScript JSX     |          4 |          0 |          2 |          6 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPalette\ColorPalette.module.css           | CSS                |         13 |          0 |          3 |         16 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPalette\ColorPalette.tsx                  | TypeScript JSX     |         43 |          0 |          4 |         47 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPalette\useColorPaletteViewModel.ts       | TypeScript         |         43 |          0 |          9 |         52 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPickerList\ColorPickerList.module.css     | CSS                |         11 |          0 |          3 |         14 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPickerList\ColorPickerList.tsx            | TypeScript JSX     |         33 |          0 |          4 |         37 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPickerList\IColorPickerListProps.ts       | TypeScript         |          4 |          0 |          2 |          6 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPickerList\useColorPickerListViewModel.ts | TypeScript         |         61 |          1 |         11 |         73 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPicker\ColorPicker.module.css             | CSS                |         29 |          0 |          7 |         36 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPicker\ColorPicker.tsx                    | TypeScript JSX     |         53 |          0 |          4 |         57 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPicker\IColorPickerProps.ts               | TypeScript         |          8 |          0 |          2 |         10 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\colorPicker\useColorPickerViewModel.ts         | TypeScript         |         19 |          0 |          5 |         24 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\controlUnitIcon\ControlUnitIcon.tsx            | TypeScript JSX     |         22 |          0 |          2 |         24 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\features\controlUnitIcon\IControlUnitIconProps.ts       | TypeScript         |          4 |          0 |          2 |          6 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\hooks\useToggle.ts                                      | TypeScript         |         14 |          0 |          4 |         18 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\index.css                                               | CSS                |         12 |          1 |          2 |         15 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\index.tsx                                               | TypeScript JSX     |          7 |          0 |          2 |          9 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\model\IColor.ts                                         | TypeScript         |          4 |          0 |          1 |          5 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\pages\ColorPalettePage.tsx                              | TypeScript JSX     |         11 |          0 |          2 |         13 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\react-app-env.d.ts                                      | TypeScript         |          0 |          1 |          1 |          2 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\setupTests.ts                                           | TypeScript         |          1 |          4 |          1 |          6 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\types\IHaveDisplayControlUnits.ts                       | TypeScript         |          3 |          3 |          1 |          7 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\utils\IdGenerator.ts                                    | TypeScript         |          8 |          0 |          3 |         11 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\src\utils\style.ts                                          | TypeScript         |          3 |          0 |          1 |          4 |
+| c:\Users\Peter\Documents\ReactProjects\color-palette.react\tsconfig.json                                               | JSON with Comments |         26 |          0 |          1 |         27 |
+| Total                                                                                                                  |                    |     18,639 |         33 |        122 |     18,794 |
++------------------------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
