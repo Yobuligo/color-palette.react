@@ -1,8 +1,9 @@
 import { EnumType } from "./types/EnumType";
+import { KeyOf } from "./types/KeyOf";
 
 export class Enum {
-  static getValues<T extends EnumType>(type: T): (keyof T)[] {
-    const values: (keyof T)[] = [];
+  static keys<T extends EnumType>(type: T): KeyOf<T>[] {
+    const values: KeyOf<T>[] = [];
     for (const propName in type) {
       values.push(type[propName]);
     }

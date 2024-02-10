@@ -1,4 +1,4 @@
-import { Enum } from "../../base/Enum";
+import { Enum } from "../../core/Enum";
 import { Select } from "../../components/select/Select";
 import { ColorType } from "../../types/ColorType";
 import { style } from "../../utils/style";
@@ -28,7 +28,7 @@ export const ColorPickerList: React.FC<IColorPickerListProps> = (props) => {
     <div>
       {props.displayControlUnits && (
         <Select
-          items={Enum.getValues(ColorType)}
+          items={Enum.keys(ColorType)}
           renderOptionTitle={(colorType) => colorType}
           placeholder="... Select option"
         />
